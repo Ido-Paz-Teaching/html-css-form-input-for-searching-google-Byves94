@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>HTML form , input , for searching google using CSS design</title>
+        <style>
+            label {
+                font-weight: bold;
+            }
+        </style>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+
+    <body>
+        <form action="https://google.co.il/search" target="_blank">
+            <label>
+                Search text:
+            </label>
+            <input type="text" id="q" name="q" required placeholder="enter text">
+            
+            <label>
+                That was updated in:
+            </label>
+            <select name="as_qdr" id="as_qdr">
+                <option value="">Any time</option>
+                <option value="d">Last 24 hours</option>
+                <option value="w">Last week</option>
+                <option value="m">Last month</option>
+                <option value="y">Last year</option>
+            </select>
+
+            <label for="lr">
+                Search only pages written in hebrew:
+            </label>
+            <input type="checkbox" id="lr" name="lr" value="lang_iw">
+            
+            <label>
+                Number of results:
+            </label>
+            <input type="num" name="num" id="num" required placeholder="enter number">
+            <input type="submit" value="Ask google" style="color: green; border-radius: 10px">
+        </form>
+    </body>
+</html>
